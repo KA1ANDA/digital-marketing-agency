@@ -1,0 +1,14 @@
+import React from 'react';
+
+
+
+function ServicesHeading() {
+  return (
+    <div className=' mt-[140px] mb-20 px-[100px] flex items-start gap-10'>
+      <div className=' text-[40px] font-medium leading-normal flex flex-col items-start bg-green gap-[10px] px-[7px] rounded-[7px]'>Services</div>
+      <div className='text-lg leading-normal font-normal w-[580px] flex-shrink-0'>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</div>
+    </div>
+  );
+}
+
+export default ServicesHeading;
