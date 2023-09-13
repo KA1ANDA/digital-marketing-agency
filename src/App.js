@@ -9,6 +9,10 @@ import OurWorkingProcessHeading from './components/headings/OurWorkingProcessHea
 import ProcessBlock from './components/processBlock/ProcessBlock';
 import TeamHeading from './components/headings/TeamHeading';
 import GroupOfCards from './components/teamGroupOfCards/GroupOfCards';
+import TestimonialsHeading from './components/headings/TestimonialsHeading';
+import TestimonialsBlock from './components/testimonialsBlock/TestimonialsBlock';
+import ContactUsHeading from './components/headings/ContactUsHeading';
+import ContactBlock from './components/contactBlock/ContactBlock';
 
 
 
@@ -25,6 +29,10 @@ function App() {
       <ProcessBlock />
       <TeamHeading />
       <GroupOfCards />
+      <TestimonialsHeading />
+      <TestimonialsBlock/>
+      <ContactUsHeading />
+      <ContactBlock />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import avatar3 from './../../imgs/profile/profile3.png'
 import avatar4 from './../../imgs/profile/profile4.png'
 import avatar5 from './../../imgs/profile/profile5.png'
 import avatar6 from './../../imgs/profile/profile6.png'
+import TeamButton from './TeamButton';
 
 
 
@@ -64,11 +65,16 @@ const TeamInfo = [
 
 function GroupOfCards() {
   return (
-    <div className=' grid grid-cols-3 items-start gap-10 mx-[100px]'>
-      {TeamInfo.map(el => (
-        <TeamCard key={el.id} id={el.id} photo={el.photo} name={el.name} rank={el.rank} bio={el.bio} />
-      ))}
-    </div>
+    <>
+      <div className=' grid grid-cols-3 items-start gap-10 mx-[100px]'>
+        {TeamInfo.map(el => (
+          <TeamCard key={el.id} id={el.id} photo={el.photo} name={el.name} rank={el.rank} bio={el.bio} />
+        ))}
+      </div>
+
+      <TeamButton />
+    </>
+    
   );
 }
 
