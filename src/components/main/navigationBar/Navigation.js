@@ -3,7 +3,7 @@ import React from 'react';
 
 function Navigation() {
   return (
-    <div className='px-[100px] flex justify-between items-center'>
+    <div className='px-[100px] flex justify-between items-center w-[1440px]'>
       <div className='flex h-9 justify-center items-center gap-3'>
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
           <g clip-path="url(#clip0_505_42)">

@@ -4,7 +4,7 @@ import React from 'react';
 
 function CaseStudiesBlock() {
   return (
-    <div className=' inline-flex px-[100px] flex-col items-start gap-[10px]'>
+    <div className=' inline-flex px-[100px] flex-col items-start gap-[10px] w-[1440px]'>
       <div className='flex py-[70px] px-[60px] items-start gap-16 rounded-[45px] bg-black'>
         <div className='flex flex-col items-start gap-5'>
           <div className=' text-lg leading-normal text-white'>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</div>

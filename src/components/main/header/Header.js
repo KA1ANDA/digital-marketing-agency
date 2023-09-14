@@ -12,7 +12,7 @@ function Header() {
         <button className='flex py-5 px-[35px] items-start gap-[10px] border rounded-[14px] bg-black text-white text-xl w-fit'>Book a consultation</button>
       </div>
       <div className=''>
-        <img src={mainImg} className='object-contain' ></img>
+        <img src={mainImg} className='w-[600px] h-[515px] object-contain ' ></img>
       </div>
     </div>
   );

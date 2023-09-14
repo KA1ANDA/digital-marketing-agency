@@ -4,7 +4,7 @@ import React from 'react';
 
 function Logotypes() {
   return (
-    <div className='flex px-[100px] justify-between items-start grayscale '>
+    <div className='flex px-[100px] justify-between items-start grayscale w-[1440px]'>
       <svg xmlns="http://www.w3.org/2000/svg" width="125" height="48" viewBox="0 0 125 48" fill="none">
         <g >
           <path  fill-rule="evenodd" clip-rule="evenodd" d="M76.6508 37.8069C69.4708 42.4973 59.0639 44.9998 50.1036 44.9998C37.54 44.9998 26.2295 40.8814 17.6726 34.0316C17.0003 33.493 17.6027 32.7589 18.4094 33.1784C27.644 37.9403 39.062 40.8051 50.8566 40.8051C58.8111 40.8051 67.5615 39.3465 75.6074 36.3196C76.8229 35.862 77.8394 37.0251 76.6508 37.8069Z" fill="#FF9900"/>
