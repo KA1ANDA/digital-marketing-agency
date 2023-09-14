@@ -13,6 +13,7 @@ import TestimonialsHeading from './components/headings/TestimonialsHeading';
 import TestimonialsBlock from './components/testimonialsBlock/TestimonialsBlock';
 import ContactUsHeading from './components/headings/ContactUsHeading';
 import ContactBlock from './components/contactBlock/ContactBlock';
+import FooterBlock from './components/footerBlock/FooterBlock';
 
 
 
@@ -33,6 +34,7 @@ function App() {
       <TestimonialsBlock/>
       <ContactUsHeading />
       <ContactBlock />
+      <FooterBlock />
     </div>
   );
 }
