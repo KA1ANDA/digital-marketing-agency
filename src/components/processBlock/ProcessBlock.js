@@ -37,7 +37,7 @@ const ProcessCardInfo = [
 
 function ProcessBlock() {
   return (
-    <div className=' inline-flex px-[100px] flex-col items-start gap-[30px]'>
+    <div className=' flex md:inline-flex p-[20px] md:px-[100px] flex-col items-center md:items-start gap-[30px]'>
       {ProcessCardInfo.map(el => 
         <ProcessCard number={el.number} title={el.title} text={el.text}/>
       )}

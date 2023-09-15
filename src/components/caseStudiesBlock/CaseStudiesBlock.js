@@ -1,10 +1,72 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+
+
+import styles from './stylesCase.css';
+import CaseCard from './CaseCard';
+
+// import required modules
 
 
 
 function CaseStudiesBlock() {
+
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+
+    useEffect(() => {
+    
+      const checkScreenSize = () => {
+        setIsLargeScreen(window.innerWidth <= 768);
+      };
+
+    
+      checkScreenSize();
+
+    
+      window.addEventListener('resize', checkScreenSize);
+
+      
+      return () => {
+        window.removeEventListener('resize', checkScreenSize);
+      };
+    }, []);
+
+    const cardInfo = [
+      {
+        info:'For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.'
+      },
+      {
+        info:'For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.'
+      },
+      {
+        info:'For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.'
+      },
+      
+    ]
+
   return (
-    <div className=' inline-flex px-[100px] flex-col items-start gap-[10px] w-[1440px]'>
+    <div className='  md:inline-flex px-5 md:px-[100px] md:flex-col items-start gap-[10px] md:w-[1440px]  '>
+      {isLargeScreen ? 
+      
+      <Swiper
+        slidesPerView={1.1}  
+        spaceBetween={30}
+        className={'mySecondSwiper'}
+      >
+        {cardInfo.map(el => (
+          <SwiperSlide className='oneslide'>
+            <CaseCard text={el.info}/>
+          </SwiperSlide>
+        ))}
+        
+
+      </Swiper>
+    
+      :
       <div className='flex py-[70px] px-[60px] items-start gap-16 rounded-[45px] bg-black'>
         <div className='flex flex-col items-start gap-5'>
           <div className=' text-lg leading-normal text-white'>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</div>
@@ -36,6 +98,8 @@ function CaseStudiesBlock() {
           </a>
         </div>
       </div>
+      
+      }
     </div>
   );
 }

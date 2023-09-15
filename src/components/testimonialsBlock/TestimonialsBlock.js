@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Testimonial from './Testimonial'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -52,8 +52,42 @@ const Testimonials = [
 
 
 function TestimonialsBlock() {
+
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+
+  useEffect(() => {
+  
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth <= 768);
+    };
+
+  
+    checkScreenSize();
+
+   
+    window.addEventListener('resize', checkScreenSize);
+
+    
+    return () => {
+      window.removeEventListener('resize', checkScreenSize);
+    };
+  }, []);
+
+
+  let screenSize = () =>{
+
+    if(isLargeScreen){
+      return 1
+    }else{
+      return 3
+    }
+  }
+
+ 
+
   return (
-    <div className=' inline-flex pt-[84px] pb-[68px] mx-[100px] items-center rounded-[45px] bg-black text-white justify-center w-[1240px] h-[625px] overflow-hidden '>
+    <div className=' mx-[20px] md:inline-flex pt-[30px] md:pt-[84px] md:pb-[68px] md:mx-[100px] items-center rounded-[45px] bg-black text-white justify-center md:w-[1240px] h-[625px] overflow-hidden '>
       <div className=''>
       
 <>
@@ -64,12 +98,12 @@ function TestimonialsBlock() {
         pagination={true}
         mousewheel={true}
         keyboard={true}
-        slidesPerView={3}
+        slidesPerView={screenSize()}
         spaceBetween={10}
         // width={606}
         // height={200}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="mySwiper"
+        className="myFirstSwiper"
       >
       
           {Testimonials.map((el) => (

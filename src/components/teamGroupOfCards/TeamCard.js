@@ -13,7 +13,7 @@ function TeamCard({id , photo , name , rank , bio }) {
           <div className='flex pr-0 items-end gap-5 flex-shrink-0 flex-grow'>
             <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" viewBox="0 0 99 98" fill="none">
           
-          <defs>
+          <defs >
             <clipPath id="clip">
               <path d="M84.631 48.9117C117.473 86.3213 87.1455 116.649 49.7359 83.8068C12.3263 116.649 -18.0016 86.3213 14.8408 48.9117C-18.0016 11.5021 12.3263 -18.8258 49.7359 14.0166C87.1455 -18.8258 117.473 11.5021 84.631 48.9117Z" />
             </clipPath>

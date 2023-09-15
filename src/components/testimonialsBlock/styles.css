@@ -3,10 +3,10 @@
   width: 1918px;
   height: 500px;
   overflow: hidden;
+  /* background-color: red; */
  
   
-
-  
+ 
 }
 
 .swiper-button-prev,
@@ -48,3 +48,28 @@
   
 }
 
+
+
+@media (max-width:768px) {
+  .myFirstSwiper{
+    /* background-color: purple; */
+    width: 100% !important;
+
+  }
+
+  .swiper-slide{
+    /* background-color: pink; */
+    /* width: 100% !important; */
+    /* width: fit-content !important; */
+
+  }
+
+  
+.swiper-button-prev,
+.swiper-button-next {
+  color: #F3F3F3;
+  position: absolute;
+  margin: 200px 15px;
+}
+
+}
