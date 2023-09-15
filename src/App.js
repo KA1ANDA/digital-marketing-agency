@@ -19,7 +19,7 @@ import FooterBlock from './components/footerBlock/FooterBlock';
 
 function App() {
   return (
-    <div className=''>
+    <div className='bg-[#d57070]'>
       <Main />
       <ServicesHeading />
       <ServicesBlock />

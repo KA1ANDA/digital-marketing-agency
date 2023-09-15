@@ -1,9 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 function Navigation() {
+
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+
+  useEffect(() => {
+  
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth <= 768);
+    };
+
+  
+    checkScreenSize();
+
+   
+    window.addEventListener('resize', checkScreenSize);
+
+    
+    return () => {
+      window.removeEventListener('resize', checkScreenSize);
+    };
+  }, []);
   return (
-    <div className='px-[100px] flex justify-between items-center w-[1440px]'>
+    <div className=' w-full md:px-[100px] md:flex justify-between items-center md:w-[1440px] inline-flex px-5 gap-[222px] bg-green  '>
       <div className='flex h-9 justify-center items-center gap-3'>
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
           <g clip-path="url(#clip0_505_42)">
@@ -28,14 +49,30 @@ function Navigation() {
         </svg>
       </div>
       <div className='flex justify-center items-center  text-black'>
+
+        {isLargeScreen ? 
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" viewBox="0 0 26 19" fill="none">
+          <path d="M1 1.80664H25" stroke="black" stroke-width="2" stroke-linecap="round"/>
+          <path d="M1 9.80664H25" stroke="black" stroke-width="2" stroke-linecap="round"/>
+          <path d="M1 17.8066H25" stroke="black" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        :
+        <>
         <ul className='flex gap-10 text-xl font-normal'>
           <li className=''><a>About us</a></li>
           <li><a>Services</a></li>
           <li><a>Use Cases</a></li>
           <li><a>Pricing</a></li>
           <li><a>Blog</a></li>
+          
         </ul>
         <button className='px-[35px] py-5 border rounded-xl flex items-start gap-2 ml-10'>Request a quote</button>
+        </>
+        
+        
+        }
+        
+        
       </div>
       
     </div>

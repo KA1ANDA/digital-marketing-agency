@@ -6,9 +6,11 @@ import cardImage6 from './../../imgs/cardImages/cardImage6.png'
 
 function ThirdCardSection() {
   return (
-    <div className='flex px-[100px] items-start gap-10'>
-      <div className='flex w-[600px] p-[50px] justify-between items-center border rounded-[45px] bg-green shadow-[0px_5px_0px_0px] shadow-black'>
-        <div className='flex flex-col justify-center items-start gap-[93px]'>
+    <div className='flex flex-col  px-[20px] md:flex-row md:px-[100px] items-start gap-10 '>
+
+
+      <div className='flex flex-col  md:flex-row w-full md:w-[600px] p-[50px] justify-between items-center border rounded-[45px] bg-green shadow-[0px_5px_0px_0px] shadow-black'>
+        <div className='flex flex-col justify-center items-start gap-[15px] md:gap-[93px]'>
           <div>
             <span className='flex flex-col items-start bg-white text-[30px] font-medium leading-normal px-[7px] gap-[10px] rounded-[7px] w-fit'>Content</span>
             <span className='flex flex-col items-start bg-white text-[30px] font-medium leading-normal px-[7px] gap-[10px] rounded-[7px] w-fit'>Creation</span>
@@ -23,14 +25,15 @@ function ThirdCardSection() {
             </div>
           </a>
         </div>
-        <div className='w-[210px] h-[170px] flex justify-center items-center flex-shrink-0'>
+        <div className='mt-[50px] w-[165px] h-[129px] md:w-[210px] md:h-[170px] flex justify-center items-center flex-shrink-0'>
           <img src={cardImage5}></img>
         </div>
       </div>
-      
 
-      <div className='flex w-[600px] p-[50px] justify-between items-center border rounded-[45px] bg-black shadow-[0px_5px_0px_0px] shadow-black'>
-        <div className='flex flex-col justify-center items-start gap-[93px]'>
+
+
+      <div className='flex flex-col  md:flex-row w-full md:w-[600px] p-[50px] justify-between items-center border rounded-[45px] bg-black shadow-[0px_5px_0px_0px] shadow-black'>
+        <div className='flex flex-col justify-center items-start gap-[15px] md:gap-[93px]'>
           <div>
             <span className='flex flex-col items-start bg-green text-[30px] font-medium leading-normal px-[7px] gap-[10px] rounded-[7px] w-fit'>Analytics and</span>
             <span className='flex flex-col items-start bg-green text-[30px] font-medium leading-normal px-[7px] gap-[10px] rounded-[7px] w-fit'>Tracking</span>
@@ -45,10 +48,13 @@ function ThirdCardSection() {
             </div>
           </a>
         </div>
-        <div className='w-[210px] h-[170px] flex justify-center items-center flex-shrink-0'>
+        <div className='mt-[50px] w-[165px] h-[129px] md:w-[210px] md:h-[170px] flex justify-center items-center flex-shrink-0'>
           <img src={cardImage6}></img>
         </div>
       </div>
+      
+
+      
     </div>
   );
 }

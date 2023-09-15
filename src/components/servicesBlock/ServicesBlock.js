@@ -7,7 +7,7 @@ import ThirdCardSection from './ThirdCardSection';
 
 function ServicesBlock() {
   return (
-    <div className='inline-flex flex-col items-start gap-10'>
+    <div className='md:inline-flex flex-col items-start gap-10'>
       <FirstCardSection />
       <SecondCardSection />
       <ThirdCardSection />
