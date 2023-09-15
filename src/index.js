@@ -7,7 +7,7 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div className=' max-w-[1440px] mx-auto font-space '>
+    <div className=' max-w-[1440px]  md:w-fit mx-auto font-space '>
       <App />
     </div>
   </React.StrictMode>
