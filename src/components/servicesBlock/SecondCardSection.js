@@ -6,7 +6,7 @@ import cardImage4 from './../../imgs/cardImages/cardImage4.png'
 
 function SecondCardSection() {
   return (
-    <div className='flex flex-col  px-[20px] md:flex-row md:px-[100px] items-start gap-10  my-10'>
+    <div data-aos="fade-left" className='flex flex-col  px-[20px] md:flex-row md:px-[100px] items-start gap-10  my-10'>
       
       <div className='flex flex-col  md:flex-row w-full md:w-[600px] p-[50px] justify-between items-center border rounded-[45px] bg-black shadow-[0px_5px_0px_0px] shadow-black'>
         <div className='flex flex-col justify-center items-start gap-[15px] md:gap-[93px]'>

@@ -7,7 +7,7 @@ import React from 'react';
 function TeamCard({id , photo , name , rank , bio }) {
 
   return (
-    <div className='flex w-[387px] h-[331px] py-10 px-[35px] flex-col items-start gap-[10px] border rounded-[45px] bg-[#FFF] shadow-[0px_5px_0px_0px] shadow-black'>
+    <div data-aos="fade-up" className='flex w-[387px] h-[331px] py-10 px-[35px] flex-col items-start gap-[10px] border rounded-[45px] bg-[#FFF] shadow-[0px_5px_0px_0px] shadow-black'>
       <div className='flex flex-col items-start gap-7'>
         <div className='flex items-start self-stretch  relative'>
           <div className='flex pr-0 items-end gap-5 flex-shrink-0 flex-grow'>

@@ -6,7 +6,7 @@ import cardImage6 from './../../imgs/cardImages/cardImage6.png'
 
 function ThirdCardSection() {
   return (
-    <div className='flex flex-col  px-[20px] md:flex-row md:px-[100px] items-start gap-10 '>
+    <div data-aos="fade-right" className='flex flex-col  px-[20px] md:flex-row md:px-[100px] items-start gap-10 '>
 
 
       <div className='flex flex-col  md:flex-row w-full md:w-[600px] p-[50px] justify-between items-center border rounded-[45px] bg-green shadow-[0px_5px_0px_0px] shadow-black'>

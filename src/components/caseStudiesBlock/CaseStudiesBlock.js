@@ -49,7 +49,7 @@ function CaseStudiesBlock() {
     ]
 
   return (
-    <div className='   md:inline-flex px-5 md:px-[100px] md:flex-col md:items-start gap-[10px] md:w-[1440px]'>
+    <div data-aos="fade-in" className=' md:inline-flex px-5 md:px-[100px] md:flex-col md:items-start gap-[10px] md:w-[1440px]'>
       {isLargeScreen ? 
       
       <Swiper

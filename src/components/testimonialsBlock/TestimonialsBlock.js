@@ -87,7 +87,7 @@ function TestimonialsBlock() {
  
 
   return (
-    <div className=' mx-[20px] md:inline-flex pt-[30px] md:pt-[84px] md:pb-[68px] md:mx-[100px] items-center rounded-[45px] bg-black text-white justify-center md:w-[1240px] h-[625px] overflow-hidden '>
+    <div data-aos="fade-in" className=' mx-[20px] md:inline-flex pt-[30px] md:pt-[84px] md:pb-[68px] md:mx-[100px] items-center rounded-[45px] bg-black text-white justify-center md:w-[1240px] h-[625px] overflow-hidden '>
       <div className=''>
       
 <>
