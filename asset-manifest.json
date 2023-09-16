@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/digital-marketing-agency/static/css/main.f2335bf9.css",
-    "main.js": "/digital-marketing-agency/static/js/main.e2fbdacb.js",
+    "main.css": "/digital-marketing-agency/static/css/main.aec7a7a4.css",
+    "main.js": "/digital-marketing-agency/static/js/main.520914dc.js",
     "static/media/main.png": "/digital-marketing-agency/static/media/main.b9169189fbb2724afd30.png",
     "static/media/contact.png": "/digital-marketing-agency/static/media/contact.0fd5937cd29315b8b593.png",
     "static/media/cardImage6.png": "/digital-marketing-agency/static/media/cardImage6.c8db4c276530b5c946f8.png",
@@ -17,11 +17,11 @@
     "static/media/profile1.png": "/digital-marketing-agency/static/media/profile1.9628c185391c3337b6f1.png",
     "static/media/profile2.png": "/digital-marketing-agency/static/media/profile2.e444f6f49df51e031866.png",
     "index.html": "/digital-marketing-agency/index.html",
-    "main.f2335bf9.css.map": "/digital-marketing-agency/static/css/main.f2335bf9.css.map",
-    "main.e2fbdacb.js.map": "/digital-marketing-agency/static/js/main.e2fbdacb.js.map"
+    "main.aec7a7a4.css.map": "/digital-marketing-agency/static/css/main.aec7a7a4.css.map",
+    "main.520914dc.js.map": "/digital-marketing-agency/static/js/main.520914dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2335bf9.css",
-    "static/js/main.e2fbdacb.js"
+    "static/css/main.aec7a7a4.css",
+    "static/js/main.520914dc.js"
   ]
 }
