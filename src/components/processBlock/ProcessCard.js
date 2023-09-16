@@ -12,7 +12,7 @@ function ProcessCard({number , title , text}) {
   }
 
   return (
-    <div data-aos="fade-in" className={`flex w-full p-[20px] md:w-[1234px] md:py-[41px] md:px-[60px] flex-col items-start gap-[10px] rounded-[45px] border ${openCard ? 'bg-green' : 'bg-white'}  shadow-[0px_5px_0px_0px] shadow-black transition-all `}>
+    <div  className={`flex w-full p-[20px] md:w-[1234px] md:py-[41px] md:px-[60px] flex-col items-start gap-[10px] rounded-[45px] border ${openCard ? 'bg-green' : 'bg-white'}  shadow-[0px_5px_0px_0px] shadow-black transition-all `}>
       <div className='flex  w-full md:w-[1117px] justify-between items-center'>
         <div className='flex items-center gap-[25px]'>
           <div className=' text-3xl md:text-6xl leading-normal font-medium'>{number}</div>

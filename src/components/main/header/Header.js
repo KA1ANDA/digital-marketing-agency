@@ -26,7 +26,7 @@ function Header() {
     };
   }, []);
   return (
-    <div className='  w-full flex-col justify-between my-[70px] items-center  md:px-[100px] flex md:flex-row  md:items-start '>
+    <div id='aboutUs' className='  w-full flex-col justify-between my-[70px] items-center  md:px-[100px] flex md:flex-row  md:items-start '>
 
       {isLargeScreen ? 
       <>

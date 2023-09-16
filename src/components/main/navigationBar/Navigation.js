@@ -65,9 +65,9 @@ function Navigation() {
           :
           <>
           <ul className='flex gap-10 text-xl font-normal  '>
-            <li className=''><a>About us</a></li>
-            <li><a>Services</a></li>
-            <li><a>Use Cases</a></li>
+            <li><a href='#aboutUs'>About us</a></li>
+            <li><a href='#services'>Services</a></li>
+            <li><a href='#cases'>Use Cases</a></li>
             <li><a>Pricing</a></li>
             <li><a>Blog</a></li>
             
@@ -86,10 +86,10 @@ function Navigation() {
 
       {isLargeScreen && openMenu && 
           <>
-            <ul className='flex flex-col gap-5  text-base  justify-center items-center my-5 bg-white w-full font-medium  border rounded-xl  underline '>
-              <li className=''><a>About us</a></li>
-              <li><a>Services</a></li>
-              <li><a>Use Cases</a></li>
+            <ul className='flex flex-col gap-5  text-base  justify-center items-center my-5 bg-white w-full font-medium  border rounded-xl  underline cursor-pointer'>
+              <li><a href='#aboutUs'>About us</a></li>
+              <li><a href='#services'>Services</a></li>
+              <li><a href='#cases'>Use Cases</a></li>
               <li><a>Pricing</a></li>
               <li><a>Blog</a></li>
               
