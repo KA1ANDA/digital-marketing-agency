@@ -66,7 +66,7 @@ const TeamInfo = [
 function GroupOfCards() {
   return (
     <>
-      <div className=' flex flex-col justify-center items-center md:grid mx-[20px] md:grid-cols-3 md:items-start gap-10 md:mx-[100px] md:w-[1240px] bg-green'>
+      <div className=' flex flex-col justify-center items-center md:grid mx-[20px] md:grid-cols-3 md:items-start gap-10 md:mx-[100px] md:w-[1240px]'>
         {TeamInfo.map(el => (
           <TeamCard key={el.id} id={el.id} photo={el.photo} name={el.name} rank={el.rank} bio={el.bio} />
         ))}

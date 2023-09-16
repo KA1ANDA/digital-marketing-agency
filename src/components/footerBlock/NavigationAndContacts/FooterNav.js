@@ -1,10 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import FooterContacts from './FooterContacts';
 
 
 
 
 
 function FooterNav() {
+
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+  
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth <= 768);
+    };
+
+  
+    checkScreenSize();
+
+   
+    window.addEventListener('resize', checkScreenSize);
+
+    
+    return () => {
+      window.removeEventListener('resize', checkScreenSize);
+    };
+  }, []);
+
   return (
     <div className='flex flex-col md:flex-row md:w-[1121px] items-center gap-[37px] md:gap-[155px] '>
       <div className='flex justify-center items-center gap-[11px] flex-shrink-0'>
@@ -37,6 +59,9 @@ function FooterNav() {
         <li>Pricing</li>
         <li>Blog</li>
       </ul>
+
+      <FooterContacts />
+
       <div className='flex items-start gap-5'>
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
   <circle cx="15" cy="15" r="15" fill="white"/>

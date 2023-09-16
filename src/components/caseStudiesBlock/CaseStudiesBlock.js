@@ -49,11 +49,11 @@ function CaseStudiesBlock() {
     ]
 
   return (
-    <div className='  md:inline-flex px-5 md:px-[100px] md:flex-col items-start gap-[10px] md:w-[1440px]  '>
+    <div className='   md:inline-flex px-5 md:px-[100px] md:flex-col md:items-start gap-[10px] md:w-[1440px]'>
       {isLargeScreen ? 
       
       <Swiper
-        slidesPerView={1.1}  
+        slidesPerView={1.2}  
         spaceBetween={30}
         className={'mySecondSwiper'}
       >

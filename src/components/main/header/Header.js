@@ -26,12 +26,12 @@ function Header() {
     };
   }, []);
   return (
-    <div className=' w-full flex-col my-[70px] items-center  md:px-[100px] flex md:flex-row  md:items-start bg-green '>
+    <div className=' w-full flex-col justify-between my-[70px] items-center  md:px-[100px] flex md:flex-row  md:items-start '>
 
       {isLargeScreen ? 
       <>
-        <div className='flex flex-col gap-9 mx-[20px]'>
-          <div className=' w-[390px] text-[43px] md:text-6xl font-medium   leading-normal'>Navigating the digital landscape for success</div>
+        <div className='flex flex-col gap-9  justify-center items-center'>
+          <div className='  w-[390px] text-[43px] md:text-6xl font-medium   leading-normal'>Navigating the digital landscape for success</div>
           <div className=''>
             <img src={mainImg} className=' object-cover ' ></img>
           </div> 

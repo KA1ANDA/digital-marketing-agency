@@ -10,14 +10,14 @@ function ContactForm() {
   return (
 
     <>
-      <form className='flex flex-col px-[30px] py-[40px] md:px-0 md:py-0 w-full items-start gap-10 '>
-        <div className='flex items-start gap-[35px] '>
+      <form className='flex flex-col items-center px-[30px] py-[40px] md:px-0 md:py-0 w-full md:items-start gap-10 '>
+        <div className='flex items-start gap-[35px] text-base leading-normal md:text-lg '>
           
             <input type='radio' id='sayHi' name='radio' value='sayHi' className='w-7 h-7 accent-green'></input>
-            <label htmlFor='sayHi' className=' text-lg'>Say Hi</label>
+            <label htmlFor='sayHi' className=' '>Say Hi</label>
           
             <input type='radio' id='quote' name='radio' value='quote' className='w-7 h-7 accent-green'></input>
-            <label htmlFor='quote' className=' text-lg'>Get a Quote</label>
+            <label htmlFor='quote' className=' '>Get a Quote</label>
               
         </div>
 

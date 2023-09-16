@@ -6,7 +6,7 @@ import Logotypes from './logotypes/Logotypes';
 
 function Main() {
   return (
-    <div className=' mt-[60px]'>
+    <div className=' mt-[30px] md:mt-[60px]'>
       <Navigation />
       <Header />
       <Logotypes />
